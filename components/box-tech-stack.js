@@ -89,7 +89,7 @@ export default function BoxTechStack() {
           justifyContent="center"
           alignItems={'center'}
           shadow="md"
-          width={'120px'}
+          width={'108px'}
           borderWidth="1px"
           m="1"
         >
