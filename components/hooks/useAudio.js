@@ -14,14 +14,14 @@ const useAudio = url => {
     playing ? audio?.play() : audio?.pause()
   }, [audio, playing])
 
-  // useEffect(() => {
-  //   if (audio) {
-  //     audio.addEventListener('ended', () => setPlaying(false))
-  //     return () => {
-  //       audio.removeEventListener('ended', () => setPlaying(false))
-  //     }
-  //   }
-  // }, [audio])
+  useEffect(() => {
+    if (audio) {
+      audio.addEventListener('ended', () => setPlaying(false))
+      return () => {
+        audio.removeEventListener('ended', () => setPlaying(false))
+      }
+    }
+  }, [audio])
 
   return [playing, toggle]
 }
