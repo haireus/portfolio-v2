@@ -19,6 +19,7 @@ import Section from '../components/section'
 // import { GridItem } from '../components/grid-item'
 import { IoLogoGithub } from 'react-icons/io5'
 import { BsFacebook } from 'react-icons/bs'
+import { AiFillLinkedin } from 'react-icons/ai'
 // import thumbYouTube from '../public/images/links/youtube.png'
 // import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -150,6 +151,20 @@ const Home = () => (
           On the web
         </Heading>
         <List>
+          <ListItem>
+            <Link
+              href="https://www.linkedin.com/in/%C4%91inh-v%C4%83n-ha%CC%89i-ba347a21a/"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<AiFillLinkedin />}
+              >
+                Linkedin
+              </Button>
+            </Link>
+          </ListItem>
           <ListItem>
             <Link href="https://github.com/haireus" target="_blank">
               <Button
