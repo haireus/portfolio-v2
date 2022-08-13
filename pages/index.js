@@ -22,6 +22,7 @@ import { BsFacebook } from 'react-icons/bs'
 // import thumbYouTube from '../public/images/links/youtube.png'
 // import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
+import BoxTechStack from '../components/box-tech-stack'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -134,6 +135,15 @@ const Home = () => (
         <Paragraph>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Music, Book , Web
           developement
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Tech stack
+        </Heading>
+        <Paragraph>
+          <BoxTechStack />
         </Paragraph>
       </Section>
 
