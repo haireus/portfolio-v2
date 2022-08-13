@@ -89,14 +89,16 @@ export default function BoxTechStack() {
           justifyContent="center"
           alignItems={'center'}
           shadow="md"
-          width={'108px'}
+          width={'100px'}
           borderWidth="1px"
           m="1"
         >
           <Text fontSize="xl" textAlign={'center'}>
             {el.icon}
           </Text>
-          <Text textAlign={'center'}>{el.tech}</Text>
+          <Text fontSize={'12px'} textAlign={'center'}>
+            {el.tech}
+          </Text>
         </Box>
       ))}
     </>
