@@ -122,9 +122,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2020 to now</BioYear>
-          <BioContent>
-            Join Amela Inc as an Intern and has a big grow from here!
-          </BioContent>
+          <BioContent>Join Amela Inc and has a big grow from here!</BioContent>
         </BioSection>
       </Section>
 
