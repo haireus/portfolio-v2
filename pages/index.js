@@ -110,7 +110,7 @@ const Home = () => (
             Studied at Hanoi University of Science and Technology. Major:
             Mechatronics (I took this major just because my friend took it, and
             I&apos;m actually not know what it is, but my parent was so proud of
-            me. )
+            me at this time. )
           </BioContent>
         </BioSection>
         <BioSection>
