@@ -13,11 +13,12 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+import { BioContent, BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { BsFacebook } from 'react-icons/bs'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -37,15 +38,15 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+        Hello, I&apos;m a web developer based in Vietnam!
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Hải Đinh
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Developer / Minimalist / Project manager(on the way)</p>
         </Box>
         <Box
           flexShrink={0}
@@ -64,11 +65,12 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/mine.jpeg"
               alt="Profile image"
               borderRadius="full"
               width="100%"
               height="100%"
+              objectFit={'cover'}
             />
           </Box>
         </Box>
@@ -79,21 +81,10 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop" passHref scroll={false}>
-            <Link>Inkdrop</Link>
-          </NextLink>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <NextLink href="https://www.youtube.com/devaslife" passHref>
-            <Link target="_blank">Dev as Life</Link>
-          </NextLink>
-          &quot; has more than 100k subscribers.
+          Hai is a full-stack developer with a passion for building digital
+          services/stuff he wants. He organizes his work into flow and planning
+          thing out. When not working, he loves hanging out with his book and
+          learn new technology.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -108,23 +99,31 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
+
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>1997</BioYear>
+          <BioContent> Born in ChuongMy, Hanoi.</BioContent>
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2015 - 2020</BioYear>
+          <BioContent>
+            Studied at Hanoi University of Science and Technology. Major:
+            Mechatronics (I took this major just because my friend took it, and
+            I&apos;m actually not know what it is, but my parent was so proud of
+            me. )
+          </BioContent>
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2020</BioYear>
+          <BioContent>
+            Self-taught programming : HTML, CSS, JS, REACT JS, NODEJS, MYSQL...
+          </BioContent>
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <BioYear>2020 to now</BioYear>
+          <BioContent>
+            Join Amela Inc as an Intern and has a big grow from here!
+          </BioContent>
         </BioSection>
       </Section>
 
@@ -133,15 +132,8 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Music, Book , Web
+          developement
         </Paragraph>
       </Section>
 
@@ -151,52 +143,30 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/haireus" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                Github
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://www.facebook.com/haidinh07" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<BsFacebook />}
               >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @craftzdog
+                Facebook
               </Button>
             </Link>
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://www.youtube.com/devaslife"
             title="Dev as Life"
@@ -211,7 +181,7 @@ const Home = () => (
           >
             A Markdown note-taking app
           </GridItem>
-        </SimpleGrid>
+        </SimpleGrid> */}
 
         <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
