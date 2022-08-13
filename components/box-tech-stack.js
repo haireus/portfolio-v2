@@ -83,7 +83,7 @@ export default function BoxTechStack() {
       {data.map(el => (
         <Box
           key={el.id}
-          p={5}
+          p={2}
           display={'flex'}
           flexDirection="column"
           justifyContent="center"
