@@ -82,7 +82,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Hai is a full-stack developer with a passion for building digital
-          services/stuff he wants. He organizes his work into flow and planning
+          services/stuff he wants. He organizes his work into flow and plans
           thing out. When not working, he loves hanging out with his book and
           learn new technology.
         </Paragraph>
