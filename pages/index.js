@@ -40,7 +40,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m a web developer based in Vietnam!
+        Hello, I&apos;m a web developer based in Hanoi, Vietnam!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -83,10 +83,10 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Hai is a full-stack developer with a passion for building digital
-          services/stuff he wants. He organizes his work into flow and plans
-          thing out. When not working, he loves hanging out with his book and
-          learn new technology.
+          Hai is a full-stack developer passionate about building digital
+          services/stuff he wants. He organizes his work into a flow and plans
+          things out. When not working, he loves hanging out with his book and
+          learning new technology.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -122,8 +122,27 @@ const Home = () => (
           </BioContent>
         </BioSection>
         <BioSection>
-          <BioYear>2020 to now</BioYear>
-          <BioContent>Join Amela Inc and has a big grow from here!</BioContent>
+          <BioYear>2020 - 2022</BioYear>
+          <BioContent>
+            Joined &nbsp;<Link>Amela Inc</Link>&nbsp; and has a big grow from
+            here! I have worked at both front end development and back end as
+            well. My main stack was Reactjs + Nestjs
+          </BioContent>
+        </BioSection>
+
+        <BioSection>
+          <BioYear>2022 - now</BioYear>
+          <BioContent>
+            Join &nbsp;
+            <Link
+              href="https://cmcglobal.com.vn/"
+              target={'_blank'}
+              rel="noreferrer"
+            >
+              CMC global
+            </Link>
+            &nbsp; and continue to conquer new challenges!
+          </BioContent>
         </BioSection>
       </Section>
 
