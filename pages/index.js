@@ -124,9 +124,12 @@ const Home = () => (
         <BioSection>
           <BioYear>2020 - 2022</BioYear>
           <BioContent>
-            Joined &nbsp;<Link>Amela Inc</Link>&nbsp; and has a big grow from
-            here! I have worked at both front end development and back end as
-            well. My main stack was Reactjs + Nestjs
+            Joined &nbsp;
+            <Link href="https://amela.vn/" target={'_blank'} rel="noreferrer">
+              Amela Inc
+            </Link>
+            &nbsp; and has a big grow from here! I have worked at both front end
+            development and back end as well. My main stack was Reactjs + Nestjs
           </BioContent>
         </BioSection>
 
