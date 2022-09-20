@@ -1,7 +1,7 @@
 import { Badge, Container, List, ListItem } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import P from '../../components/paragraph'
-import { Meta, Title, WorkImage } from '../../components/work'
+import { Meta, Title } from '../../components/work'
 
 const Work = () => (
   <Layout title="sutica">
