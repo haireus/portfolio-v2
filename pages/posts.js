@@ -1,16 +1,17 @@
-import { Container, Heading } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-// import Section from '../components/section'
-// import { GridItem } from '../components/grid-item'
+import Section from '../components/section'
+import { GridItem, PostGridItem } from '../components/grid-item'
 
-// import thumbPortfolio from '../public/images/contents/youtube-how-to-build-portfolio.jpg'
-// import thumbHowToUseInkdrop from '../public/images/contents/youtube-how-to-use-inkdrop.jpg'
-// import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg'
-// import thumbMyDeskSetup from '../public/images/contents/youtube-my-desk-setup.jpg'
-// import thumb500PaidUsers from '../public/images/contents/blog-500-paid-users.jpg'
-// import thumbFinancialGoal from '../public/images/contents/blog-financial-goal.png'
-// import thumbHowToPriceYourself from '../public/images/contents/blog-how-to-price-yourself.jpg'
-// import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg'
+import thumbPortfolio from '../public/images/contents/youtube-how-to-build-portfolio.jpg'
+import thumbHowToUseInkdrop from '../public/images/contents/youtube-how-to-use-inkdrop.jpg'
+import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg'
+import thumbMyDeskSetup from '../public/images/contents/youtube-my-desk-setup.jpg'
+import thumb500PaidUsers from '../public/images/contents/blog-500-paid-users.jpg'
+import thumbFinancialGoal from '../public/images/contents/blog-financial-goal.png'
+import thumbHowToPriceYourself from '../public/images/contents/blog-how-to-price-yourself.jpg'
+import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg'
+import thumbAtomicHabit from '../public/images/contents/atomic-habit.jpg'
 
 const Posts = () => (
   <Layout title="Posts">
@@ -19,14 +20,18 @@ const Posts = () => (
         Popular Posts
       </Heading>
 
-      {/* <Section delay={0.1}>
+      <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="How to build a portfolio website"
-            thumbnail={thumbPortfolio}
-            href="https://www.youtube.com/watch?v=bSMZgXzC9AA"
-          />
-          <GridItem
+          <PostGridItem
+            title="Atomic Habits"
+            thumbnail={thumbAtomicHabit}
+            id="atomic-habit"
+          >
+            Tiny Changes, Remakable results
+          </PostGridItem>
+
+
+          {/* <GridItem
             title="How to take notes in Markdown efficiently with Inkdrop"
             thumbnail={thumbHowToUseInkdrop}
             href="https://www.youtube.com/watch?v=-qBavwqc_mY"
@@ -40,9 +45,9 @@ const Posts = () => (
             title="My desk setup (Late 2020)"
             thumbnail={thumbMyDeskSetup}
             href="https://www.youtube.com/watch?v=1OFDMwDlnOE"
-          />
+          /> */}
         </SimpleGrid>
-      </Section> */}
+      </Section>
 
       {/* <Section delay={0.3}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
@@ -57,9 +62,9 @@ const Posts = () => (
             href="https://blog.inkdrop.app/i-stopped-setting-a-financial-goal-for-my-saas-a92c3db65506"
           />
         </SimpleGrid>
-      </Section> */}
+      </Section>
 
-      {/* <Section delay={0.5}>
+      <Section delay={0.5}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="How to Price Yourself as a Freelance Developer"

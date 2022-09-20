@@ -5,6 +5,7 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbShokunin from '../public/images/works/shokunin1.png'
 import thumbSutica from '../public/images/works/sutica1.png'
+import thumbChatApp from '../public/images/react-chat.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -40,13 +41,12 @@ const Works = () => (
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        {/* <Section delay={0.3}>
-          <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Margelo">
-            A website of the elite app development and contracting agency based
-            in Austria
+        <Section delay={0.3}>
+          <WorkGridItem id="chat" thumbnail={thumbChatApp} title="Chat application">
+          A react chat application uses redux/toolkits, nestjs, socketIO
           </WorkGridItem>
         </Section>
-        <Section delay={0.3}>
+        {/* <Section delay={0.3}>
           <WorkGridItem
             id="modetokyo"
             thumbnail={thumbModeTokyo}
