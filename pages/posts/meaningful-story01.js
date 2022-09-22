@@ -108,9 +108,9 @@ const AtomicHabit = () => (
     </Text>
     <Text marginTop={5}>
       (Cũng may câu chuyện kết thúc có hậu, một thời gian sau đó tôi được vô làm
-      ở một công viên phần mềm xịn hơn là Saigon Software Park. Lúc vô làm tôi
-      là đứa trẻ nhất trong công ty, 3 năm sau khi rời khỏi công ty tôi vẫn là
-      đứa trẻ nhất công ty. Giờ thì đi đâu cũng thuộc nhóm già nhất công ty).
+      ở một công ty phần mềm xịn hơn là Saigon Software Park. Lúc vô làm tôi là
+      đứa trẻ nhất trong công ty, 3 năm sau khi rời khỏi công ty tôi vẫn là đứa
+      trẻ nhất công ty. Giờ thì đi đâu cũng thuộc nhóm già nhất công ty).
     </Text>
 
     <Text marginTop={5}>...</Text>
