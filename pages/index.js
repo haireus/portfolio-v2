@@ -4,7 +4,7 @@ import {
   Container,
   Heading,
   Box,
-  // SimpleGrid,
+  SimpleGrid,
   Button,
   List,
   ListItem,
@@ -16,14 +16,13 @@ import Paragraph from '../components/paragraph'
 import { BioContent, BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-// import { GridItem } from '../components/grid-item'
+import { GridItem } from '../components/grid-item'
 import { IoLogoGithub } from 'react-icons/io5'
 import { BsFacebook } from 'react-icons/bs'
 import { AiFillLinkedin } from 'react-icons/ai'
-// import thumbYouTube from '../public/images/links/youtube.png'
-// import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
 import BoxTechStack from '../components/box-tech-stack'
+import thumbRain from '../public/images/contents/rain.jpeg'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -211,23 +210,6 @@ const Home = () => (
           </ListItem>
         </List>
 
-        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;100k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid> */}
-
         <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
@@ -235,6 +217,16 @@ const Home = () => (
             </Button>
           </NextLink>
         </Box>
+
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridItem
+            href="/posts/meaningful-story01"
+            title="Meaningfull story 01"
+            thumbnail={thumbRain}
+          >
+            Những bước ngoặt cuộc đời
+          </GridItem>
+        </SimpleGrid>
       </Section>
     </Container>
   </Layout>
