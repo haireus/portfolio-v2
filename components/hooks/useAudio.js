@@ -8,7 +8,11 @@ const useAudio = url => {
     setAudio(new Audio(url))
   }, [])
 
-  const toggle = () => setPlaying(!playing)
+  const toggle = () => {
+    if (!playing) {
+      audio?.play()
+    } else setPlaying(!playing)
+  }
 
   useEffect(() => {
     playing ? audio?.play() : audio?.pause()
@@ -22,6 +26,14 @@ const useAudio = url => {
       }
     }
   }, [audio])
+
+  // const toggle = () => {
+  //   if (!playing) {
+  //     new Audio(url).play().then(() => setPlaying(!playing))
+  //   } else {
+  //     new Audio(url).pause().then(() => setPlaying(!playing))
+  //   }
+  // }
 
   return [playing, toggle]
 }

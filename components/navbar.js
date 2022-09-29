@@ -78,22 +78,10 @@ const Navbar = props => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          {/* <LinkItem
-            target="_blank"
-            href="https://github.com/haireus"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
-            <IoLogoGithub />
-            Source
-          </LinkItem> */}
         </Stack>
 
         <Box flex={1} align="right">
-          <ButtonMusic />
+          {/* <ButtonMusic /> */}
           <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
