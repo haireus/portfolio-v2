@@ -5,6 +5,7 @@ import { PostGridItem } from '../components/grid-item'
 
 import thumbAtomicHabit from '../public/images/contents/atomic-habit.jpg'
 import thumRain from '../public/images/contents/rain.jpeg'
+import thumbPsychologyOfMoney from '../public/images/psychology-of-money/the-psychology-of-money.jpeg'
 
 const Posts = () => (
   <Layout title="Posts">
@@ -29,6 +30,14 @@ const Posts = () => (
             id="meaningful-story01"
           >
             Những bước ngoặt cuộc đời
+          </PostGridItem>
+
+          <PostGridItem
+            title="The psychology of money"
+            thumbnail={thumbPsychologyOfMoney}
+            id="the-psychology-of-money"
+          >
+            Timeless lessons on wealth, greed and happyness
           </PostGridItem>
 
           {/* <GridItem

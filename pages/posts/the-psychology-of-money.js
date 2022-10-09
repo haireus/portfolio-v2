@@ -1,9 +1,9 @@
-import { Tag, Text, Tooltip } from '@chakra-ui/react'
+import { Text } from '@chakra-ui/react'
 import HeaderPostDetail from '../../components/header-post-detail'
 import Layout from '../../components/layouts/article'
 
 const AtomicHabit = () => (
-  <Layout title="Atomic habit">
+  <Layout title="The psychology of money">
     <HeaderPostDetail />
     <Text>
       Do you ever feel like you just floating through life... but not actually
@@ -12,15 +12,12 @@ const AtomicHabit = () => (
       from, and all the good habits you will begin. &quot;This time will be
       different &quot;, you say to yourself. &quot;This time I AM going to do
       the things that I say I will &quot;. Only to end up back where you began
-      shortly after and no closer to what you had{' '}
-      <Tooltip label="hình dung">
-        <Tag>envisaged</Tag>
-      </Tooltip>
-      . So the question is, how do you become the person you dream of becomming?
-      How do you break free from bad habits and make the habits you desire
-      easier and automatic? Atomic Habits by James Clear answers all these
-      questions. This book deserves a space on everyone&apos;s bookshelf!
-      Let&apos;s jump into it.
+      shortly after and no closer to what you had envisaged(hình dung). So the
+      question is, how do you become the person you dream of becomming? How do
+      you break free from bad habits and make the habits you desire easier and
+      automatic? Atomic Habits by James Clear answers all these questions. This
+      book deserves a space on everyone&apos;s bookshelf! Let&apos;s jump into
+      it.
     </Text>
   </Layout>
 )
