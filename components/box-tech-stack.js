@@ -10,7 +10,11 @@ import {
   SiRedux,
   SiReacttable,
   SiAntdesign,
-  SiMaterialui
+  SiMaterialui,
+  SiNextdotjs,
+  SiPython,
+  SiVuedotjs,
+  SiJest
 } from 'react-icons/si'
 
 const data = [
@@ -29,6 +33,21 @@ const data = [
     id: 4,
     tech: 'ReactJS',
     icon: <FaReact color="#61dafb" />
+  },
+  {
+    id: "NextJs",
+    tech: "NextJS",
+    icon: <SiNextdotjs />
+  },
+  {
+    id: "VueJs",
+    tech:"VueJS",
+    icon : <SiVuedotjs color='#3FB27F' />
+  },
+  {
+    id: "Jest",
+    tech:"Jest",
+    icon : <SiJest color='#BF3B16' />
   },
   {
     id: 10,
@@ -74,6 +93,11 @@ const data = [
     id: 9,
     tech: 'SocketIO',
     icon: <SiSocketdotio color="#fff" />
+  },
+  {
+    id: "Python",
+    tech:"Python",
+    icon: <SiPython color='#376B9B' />
   }
 ]
 
