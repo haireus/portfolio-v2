@@ -11,7 +11,7 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, DownloadIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioContent, BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -90,9 +90,19 @@ const Home = () => (
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
+              My Work
             </Button>
           </NextLink>
+
+          {/* <Button
+            type="submit"
+            ml={2}
+            rightIcon={<DownloadIcon />}
+            colorScheme="teal"
+            onClick={() => window.open('../public/Đinh Văn Hải-CV.pdf')}
+          >
+            My CV
+          </Button> */}
         </Box>
       </Section>
 
