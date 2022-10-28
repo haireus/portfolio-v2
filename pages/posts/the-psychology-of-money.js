@@ -6,18 +6,27 @@ const AtomicHabit = () => (
   <Layout title="The psychology of money">
     <HeaderPostDetail />
     <Text>
-      Do you ever feel like you just floating through life... but not actually
-      getting closer to the person that you want to be. It usually happens
-      around New years, you imagine all the bad habits your going to break free
-      from, and all the good habits you will begin. &quot;This time will be
-      different &quot;, you say to yourself. &quot;This time I AM going to do
-      the things that I say I will &quot;. Only to end up back where you began
-      shortly after and no closer to what you had envisaged(hình dung). So the
-      question is, how do you become the person you dream of becomming? How do
-      you break free from bad habits and make the habits you desire easier and
-      automatic? Atomic Habits by James Clear answers all these questions. This
-      book deserves a space on everyone&apos;s bookshelf! Let&apos;s jump into
-      it.
+      Lesson 1: Everyone has different attitudes towards money and because the
+      way that those attitudes affects the way that they earn and spend their
+      money we shouldn&apos;t be too quick to judge people based on what they do
+      with their own money. <br style={{ marginBottom: '20px' }} /> So
+      let&apos;s think about people behavior when it comes to investing in
+      stocks for example, if you were born in the 1970s, the index fund that
+      track the top 500 biggest companies in the US increased by 10 times its
+      starting amount between age 13 and age 30 for you. But if you were born
+      just 20 years earlier the market basically went no where.
+    </Text>
+
+    <Text mt={30}>
+      Lesson 2: Don&apos;t underestimate the importance of luck.
+      <br style={{ marginBottom: 10 }} />
+      Basically any outcome that we&apos;re going for whether it&apos; making
+      money or anything else in life is some combination of luck and skill and
+      unfair advantages. If we take Bill Gate for example, now he&apos;s
+      obviously super talented but he was also pretty lucky to get to go to one
+      of the very few high schools in the US that actually owned a computer. And
+      that what helped him start messing around with coding and start working on
+      the company that ultimately became microsoft.
     </Text>
   </Layout>
 )
