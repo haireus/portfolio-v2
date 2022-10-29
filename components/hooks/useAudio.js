@@ -11,6 +11,7 @@ const useAudio = url => {
   const toggle = () => {
     if (!playing) {
       audio?.play()
+      setPlaying(true)
     } else setPlaying(!playing)
   }
 
@@ -25,6 +26,17 @@ const useAudio = url => {
         audio.removeEventListener('ended', () => setPlaying(false))
       }
     }
+  }, [audio])
+
+  const onScroll = () => {
+    if (audio && playing) return
+    if (!playing) {
+      audio?.play()
+      setPlaying(true)
+    }
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', onScroll)
   }, [audio])
 
   // const toggle = () => {
