@@ -11,7 +11,7 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon, DownloadIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioContent, BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -183,10 +183,7 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link
-              href="https://www.linkedin.com/in/%C4%91inh-v%C4%83n-ha%CC%89i-ba347a21a/"
-              target="_blank"
-            >
+            <Link href="https://www.linkedin.com/in/haireus07" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
