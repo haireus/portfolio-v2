@@ -145,7 +145,7 @@ const Home = () => (
         <BioSection>
           <BioYear>2022 - now</BioYear>
           <BioContent>
-            Join &nbsp;
+            Joined &nbsp;
             <Link
               href="https://cmcglobal.com.vn/"
               target={'_blank'}
