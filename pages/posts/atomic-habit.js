@@ -5,6 +5,7 @@ import Layout from '../../components/layouts/article'
 import { TextTranslate } from '../../components/textTranslate'
 import { CheckCircleIcon } from '@chakra-ui/icons'
 import atomicPic from '../../public/images/atomic_habit/book_cover.jpeg'
+import TextHeader, { TextSubHeader } from '../../components/textHeader'
 
 const AtomicHabit = () => (
   <Layout title="Atomic habit">
@@ -21,8 +22,7 @@ const AtomicHabit = () => (
       question is, how do you become the person you dream of becomming? How do
       you break free from bad habits and make the habits you desire easier and
       automatic? Atomic Habits by James Clear answers all these questions. This
-      book deserves a space on everyone&apos;s bookshelf! Let&apos;s jump into
-      it.
+      book deserves a space on everyone&apos;s bookshelf!
     </Text>
 
     <Text mt="10" fontWeight={'bold'} fontSize="3xl">
@@ -31,9 +31,7 @@ const AtomicHabit = () => (
 
     <Image src={atomicPic} alt="atomic-habit" layout="responsive" />
 
-    <Text mt="10" mb="10" fontWeight={'bold'} fontSize="3xl">
-      Chapter 1: The Surprising Power of Atomic Habits
-    </Text>
+    <TextHeader title={'Chapter 1: The Surprising Power of Atomic Habits'} />
 
     <List spacing={3}>
       <ListItem>
@@ -67,6 +65,88 @@ const AtomicHabit = () => (
         <ListIcon as={CheckCircleIcon} color="green.500" />
         Knowledge compounds: reading doesn’t teach you something new but gives
         you different ways to think about old ideas.
+      </ListItem>
+    </List>
+
+    <TextSubHeader title={'What progress is really like'} />
+
+    <List spacing={3}>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" />
+        An ice cube won’t melt aat 29, 30, 31 degrees. But at 32, it starts to
+        melt = breakthrough. Breakthroughs are due to many previous actions
+        built up. Bamboo spends 5 years growing underground, then shoots up
+        “overnight”
+      </ListItem>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" />
+        To make a meaningful difference, habits have to persist through the
+        Plateau of Latent Potential.
+      </ListItem>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" />
+        Work isn’t wasted, but stored. Success isn’t linear, there is a valley
+        of disappointment then an upshoot.
+      </ListItem>
+    </List>
+
+    <TextSubHeader title={'Forget about goals, focus on systems instead'} />
+    <List spacing={3}>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" />
+        Goals = results you want. Systems = processes to lead to those results.
+      </ListItem>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" />
+        With the right process, the score takes care of itself. “If you want
+        better results, then forget about setting goals.”
+      </ListItem>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" />
+        There are 4 problems with goals:
+        <List spacing={3} ml="5">
+          <ListItem>
+            <Text fontWeight={'bold'} display="inline">
+              Winners and losers have the same goals:
+            </Text>
+            Don’t just look at successful people’s goals — many unsuccessful
+            people have the same ones. It isn’t the goal that creates success,
+            but the SYSTEM.
+          </ListItem>
+          <ListItem>
+            <Text fontWeight={'bold'} display="inline">
+              Achieving a goal = momentary change:
+            </Text>
+            You’ll always be chasing the same result if you treat a symptom
+            without addressing the cause/system behind it. Goals are temporary.
+            Results are not the problem. We have to change the systems that
+            cause those results.
+          </ListItem>
+          <ListItem>
+            <Text fontWeight={'bold'} display="inline">
+              Goals restrict your happiness:
+            </Text>
+            If you think only achieving goals makes you happy, you will only be
+            happy for short times — when you’ve achieved a goal. But your path
+            in life won’t match your ideal path. You need to love the process
+            &gt; the product so you can be happy as long as your system is
+            running.
+          </ListItem>
+          <ListItem>
+            <Text fontWeight={'bold'} display="inline">
+              Goals conflict with long-term progress:
+            </Text>
+            Goal-orientation can create a yoyo effect. If you stop training
+            after you hit the finish line, if you’re only motivated when you
+            have a race to run, you have nothing to push yourself when you’ve
+            achieved it. Build systems to continue playing the game — long-term
+            thinking.
+          </ListItem>
+        </List>
+      </ListItem>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> If you have trouble
+        changing habits, the problem is your system, not you.
       </ListItem>
     </List>
   </Layout>
