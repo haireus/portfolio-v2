@@ -1,9 +1,9 @@
-import { Text, List, ListItem, ListIcon } from '@chakra-ui/react'
+import { Text, List, ListItem, ListIcon, UnorderedList } from '@chakra-ui/react'
 import Image from 'next/image'
 import HeaderPostDetail from '../../components/header-post-detail'
 import Layout from '../../components/layouts/article'
 import { TextTranslate } from '../../components/textTranslate'
-import { CheckCircleIcon } from '@chakra-ui/icons'
+import { CheckCircleIcon, ArrowForwardIcon } from '@chakra-ui/icons'
 import atomicPic from '../../public/images/atomic_habit/book_cover.jpeg'
 import TextHeader, { TextSubHeader } from '../../components/textHeader'
 
@@ -148,6 +148,111 @@ const AtomicHabit = () => (
         <ListIcon as={CheckCircleIcon} color="green.500" /> If you have trouble
         changing habits, the problem is your system, not you.
       </ListItem>
+    </List>
+
+    <TextSubHeader title={'Summary'} />
+    <List spacing={3}>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> Habits = compound
+        interest. 1% improvement every day = huge benefit in the end.
+      </ListItem>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> Habits are a double
+        edged sword working for or against you.
+      </ListItem>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> Small changes seem
+        to make no difference until you cross a{' '}
+        <TextTranslate
+          text={'critical threshold'}
+          textTranslate="ngưỡng tới hạn"
+        />{' '}
+        .
+      </ListItem>
+    </List>
+
+    {/* CHAPTER 2 */}
+    <TextHeader
+      title={'Chapter 2: How Your Habits Shape Your Identity (And Vice Versa)'}
+    />
+    <List spacing={3}>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> Changing habits is
+        hard because:
+        <UnorderedList spacing={3} ml="5">
+          <ListItem fontWeight={'bold'} ml="5">
+            We try to change the wrong thing
+          </ListItem>
+          <ListItem fontWeight={'bold'} ml="5">
+            We try to change habits in the wrong way.{' '}
+          </ListItem>
+        </UnorderedList>
+      </ListItem>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> There are 3 layers
+        of behavior change, from outside to inside:
+        <UnorderedList spacing={3} ml="5">
+          <ListItem fontWeight={'bold'} ml="5">
+            change in outcome (results) What you get.
+          </ListItem>
+          <ListItem fontWeight={'bold'} ml="5">
+            processes (habits and systems and routines) What you do.
+          </ListItem>
+          <ListItem fontWeight={'bold'} ml="5">
+            and identity (beliefs, worldview, self-image, judgments of yourself
+            and others) What you believe.
+          </ListItem>
+        </UnorderedList>
+      </ListItem>
+
+      <Text marginTop={'10'}>
+        When quitting smoking, one person says “I’m trying to quit” = they
+        believe they’re a smoker who is trying to be something else. The other
+        person says “No thanks, I don’t smoke.” They have{' '}
+        <TextTranslate
+          text={'embraced'}
+          textTranslate="Accept something enthusiastically"
+        />{' '}
+        a new life where smoking is not their identity.
+      </Text>
+
+      <Text mt="10">
+        But your old identity can{' '}
+        <TextTranslate text={'sabotage'} textTranslate="Phá hoại" /> your new
+        plans for change.
+      </Text>
+
+      <Text mt="10" ml="15" fontWeight={'bold'}>
+        <ArrowForwardIcon /> Behind every system of actions are a system of
+        beliefs…behavior that is{' '}
+        <TextTranslate
+          text={'incongruent'}
+          textTranslate="incompatible
+"
+        />{' '}
+        with the self will not last.
+      </Text>
+
+      <Text mt="10">
+        Another ex: a man who chewed his nails as a nervous habit stopped when
+        he got a manicure and realized that he had healthy, attractive nails.
+        His pride in his nails caused him to stop chewing.
+      </Text>
+
+      <Text>
+        In other words, the more <b>PRIDE</b> you have in some aspect of your
+        identity, the more motivated you will be to maintain habits associated
+        with it.
+      </Text>
+      <Text mt="10" ml="15" fontWeight={'bold'}>
+        <ArrowForwardIcon /> True behavior change is identity change.
+      </Text>
+
+      <Text mt="10">
+        The only way you stick to a habit is when it becomes part of your
+        identity. What you do indicates what type of person you believe you are,
+        consciously or unconsciously.
+      </Text>
     </List>
   </Layout>
 )
