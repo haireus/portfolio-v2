@@ -23,6 +23,7 @@ import { AiFillLinkedin } from 'react-icons/ai'
 import Image from 'next/image'
 import BoxTechStack from '../components/box-tech-stack'
 import thumbRain from '../public/images/contents/rain.jpeg'
+import thumbHabit from '../public/images/atomic_habit/good_habit.jpeg'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -232,6 +233,14 @@ const Home = () => (
             thumbnail={thumbRain}
           >
             Những bước ngoặt cuộc đời
+          </GridItem>
+
+          <GridItem
+            href="/posts/atomic-habit"
+            title="Atomic Habits"
+            thumbnail={thumbHabit}
+          >
+            Tiny Changes, Remakable Results
           </GridItem>
         </SimpleGrid>
       </Section>
