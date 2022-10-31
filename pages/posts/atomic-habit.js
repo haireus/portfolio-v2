@@ -5,6 +5,7 @@ import Layout from '../../components/layouts/article'
 import { TextTranslate } from '../../components/textTranslate'
 import { CheckCircleIcon, ArrowForwardIcon } from '@chakra-ui/icons'
 import atomicPic from '../../public/images/atomic_habit/book_cover.jpeg'
+import fourStepHabitPic from '../../public/images/atomic_habit/four-stages-of-the-habit-loop-building-good-habits.png'
 import TextHeader, { TextSubHeader } from '../../components/textHeader'
 
 const AtomicHabit = () => (
@@ -24,15 +25,17 @@ const AtomicHabit = () => (
       automatic? Atomic Habits by James Clear answers all these questions. This
       book deserves a space on everyone&apos;s bookshelf!
     </Text>
-
     <Text mt="10" fontWeight={'bold'} fontSize="3xl">
       “All big things come from small beginnings.”
     </Text>
-
-    <Image src={atomicPic} alt="atomic-habit" layout="responsive" />
-
+    <Image
+      src={atomicPic}
+      alt="atomic-habit"
+      layout="responsive"
+      placeholder="blur"
+      loading="lazy"
+    />
     <TextHeader title={'Chapter 1: The Surprising Power of Atomic Habits'} />
-
     <List spacing={3}>
       <ListItem>
         <ListIcon as={CheckCircleIcon} color="green.500" />
@@ -67,9 +70,7 @@ const AtomicHabit = () => (
         you different ways to think about old ideas.
       </ListItem>
     </List>
-
     <TextSubHeader title={'What progress is really like'} />
-
     <List spacing={3}>
       <ListItem>
         <ListIcon as={CheckCircleIcon} color="green.500" />
@@ -89,7 +90,6 @@ const AtomicHabit = () => (
         of disappointment then an upshoot.
       </ListItem>
     </List>
-
     <TextSubHeader title={'Forget about goals, focus on systems instead'} />
     <List spacing={3}>
       <ListItem>
@@ -149,7 +149,6 @@ const AtomicHabit = () => (
         changing habits, the problem is your system, not you.
       </ListItem>
     </List>
-
     <TextSubHeader title={'Summary'} />
     <List spacing={3}>
       <ListItem>
@@ -170,7 +169,6 @@ const AtomicHabit = () => (
         .
       </ListItem>
     </List>
-
     {/* CHAPTER 2 */}
     <TextHeader
       title={'Chapter 2: How Your Habits Shape Your Identity (And Vice Versa)'}
@@ -253,7 +251,119 @@ const AtomicHabit = () => (
         identity. What you do indicates what type of person you believe you are,
         consciously or unconsciously.
       </Text>
+
+      <Text fontWeight={'bold'} textTransform="uppercase">
+        The Goal:
+      </Text>
+      <UnorderedList spacing={3} ml="5">
+        <ListItem fontWeight={'bold'} ml="5">
+          Not to read more books, but to be a READER
+        </ListItem>
+        <ListItem fontWeight={'bold'} ml="5">
+          Not to run a marathon, but to be a RUNNER
+        </ListItem>
+        <ListItem fontWeight={'bold'} ml="5">
+          Not to play an instrument, but to be a MUSICIAN
+        </ListItem>
+      </UnorderedList>
+
+      <Text>
+        We often repeat our identity through stories like “I have a bad memory,”
+        “I’m bad at math,” “I’m not a morning person.” When we do that, we
+        create mental{' '}
+        <TextTranslate
+          text={'grooves'}
+          textTranslate="an established routine or habit."
+        />{' '}
+        and accept these statement as fact.
+      </Text>
+      <Text>
+        You need to continuously edit your beliefs, upgrading and expanding your
+        identity.
+      </Text>
+
+      <Text>
+        Habits are how you{' '}
+        <TextTranslate text={'embody'} textTranslate="represent" /> your
+        identity. Frequent habits modify your self-image. Accumulating evidence
+        causes your self-image to change.
+      </Text>
+
+      <Text>
+        Identity comes from the Latin “essentitas” = being, and “identidem” =
+        repeatedly. Ergo, identity = repeated beingness.
+      </Text>
+
+      <Text mt="10" ml="15" fontWeight={'bold'}>
+        <ArrowForwardIcon /> The process of building habits is actually the
+        process of becoming yourself…We are continually undergoing
+        microevolutions of the self. Each habit is like a suggestion: “Hey,
+        maybe this is who I am.”
+      </Text>
+
+      <Text>
+        As the “votes” (actions) mount up, you build evidence to change your
+        story and yourself. And you don’t need{' '}
+        <TextTranslate
+          text="unanimous"
+          textTranslate={'entire, total, general'}
+        />{' '}
+        votes to win an “election,” just the majority vote. Your goal: win most
+        of the time.
+      </Text>
+
+      <Text>How to begin identity change:</Text>
+      <UnorderedList spacing={3} ml="5">
+        <ListItem fontWeight={'bold'} ml="5">
+          Ask yourself “Who is the type of person that could get the outcome I
+          want?”
+        </ListItem>
+        <ListItem fontWeight={'bold'} ml="5">
+          Now start making small steps to reinforce the desired identity by
+          asking, “What would [a healthy person] do?”
+        </ListItem>
+      </UnorderedList>
+
+      <Text>
+        Your habits shape your identity and vice versa. But let your values,
+        principles, and identity drive the loop rather than the results. Focus
+        on being a particular type of person, not getting a particular result.
+      </Text>
+      <Text mt="10" ml="15" fontWeight={'bold'}>
+        <ArrowForwardIcon /> The first step is not WHAT or HOW, but WHO.
+      </Text>
     </List>
+    <TextSubHeader title={'Summary'} />
+    <List spacing={3}>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> 3 levels of change:
+        outcome, process, identity
+      </ListItem>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> To change, focus on
+        WHO you want to be, not WHAT you want to achieve
+      </ListItem>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> Identity emerges out
+        of habits. Every action is a vote for your identity.
+      </ListItem>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> Habits matter not
+        because they get you resuts but because they change your beliefs about
+        yourself.
+      </ListItem>
+    </List>
+    <TextHeader
+      title={'Chapter 3: How to Build Better Habits in 4 Simple Steps'}
+    />
+    <Image
+      src={fourStepHabitPic}
+      alt="atomic-habit"
+      layout="responsive"
+      placeholder="blur"
+      loading="lazy"
+    />
+    Nothing yet, I am still read this chapter...
   </Layout>
 )
 
