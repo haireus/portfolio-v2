@@ -1,4 +1,11 @@
-import { Text, List, ListItem, ListIcon, UnorderedList } from '@chakra-ui/react'
+import {
+  Text,
+  List,
+  ListItem,
+  ListIcon,
+  UnorderedList,
+  OrderedList
+} from '@chakra-ui/react'
 import Image from 'next/image'
 import HeaderPostDetail from '../../components/header-post-detail'
 import Layout from '../../components/layouts/article'
@@ -365,7 +372,95 @@ const AtomicHabit = () => (
       placeholder="blur"
       loading="lazy"
     />
-    Nothing yet, I am still read this chapter...
+    <List spacing={3} mt={10}>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> Author starts with
+        an <TextTranslate text={'anecdote'} textTranslate="giai thoại" /> about
+        an 1898 experiment by Edward Thorndike involving teaching cats to get
+        out of a <TextTranslate text="maze" textTranslate={'mê cung'} />. Each
+        time, cats learned faster and their actions became more automatic.
+        <Text mt="10" ml="15" fontWeight={'bold'}>
+          <ArrowForwardIcon /> Habits are, simply, reliable solutions to
+          <TextTranslate text={'recurring'} textTranslate="hiện lại" />{' '}
+          recurring problems in our environment. Jason Hreha
+        </Text>
+      </ListItem>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> The conscious mind
+        is the “bottleneck” of the brain. Habits allow you to conserve conscious
+        attention for more essential tasks.
+        <Text mt="10" ml="15" fontWeight={'bold'}>
+          <ArrowForwardIcon /> Habits do not restric freedom. They create it...
+          it’s only by making the fundamentals of life easier that you can
+          create the mental space needed for free thinking and creativity.
+        </Text>
+      </ListItem>
+    </List>
+
+    <Text fontWeight={'bold'} textTransform="uppercase" mt={5}>
+      How habits work:
+    </Text>
+    <OrderedList spacing={3} ml="5">
+      <ListItem ml="5">
+        <b>Cue</b>: a trigger to the brain. Cues are meaningless until they are
+        interpreted by thoughts, feelings, emotions of the observer into a…{' '}
+      </ListItem>
+      <ListItem ml="5">
+        <b>Craving</b>: motivational force behind every habit. You crave the
+        change in internal state that the habit delivers. (Eg: it’s not the
+        cigarette you want, but the relief it brings)
+      </ListItem>
+      <ListItem ml="5">
+        <b>Response</b>: the habit you perform (thought or action). Depends on
+        your ability and motivation, and leads to…
+      </ListItem>
+
+      <ListItem ml="5">
+        <b>Reward</b>: the end goal of every habit.
+      </ListItem>
+    </OrderedList>
+
+    <Text mt="5" lineHeight={10} fontWeight="bold">
+      1+2 = Problem phase. 3+4 = Solution phase.
+    </Text>
+    <Text fontWeight={'bold'}>
+      All behavior is driven by desire to obtain good or relieve pain.
+    </Text>
+
+    <TextSubHeader title={'The 4 Laws of Behavior Change'} />
+    <OrderedList spacing={3} ml="5">
+      <ListItem ml="5">Make it obvious</ListItem>
+      <ListItem ml="5">Make it attractive</ListItem>
+      <ListItem ml="5">Make it easy</ListItem>
+      <ListItem ml="5">Make it satisfying</ListItem>
+    </OrderedList>
+
+    <TextSubHeader title={'How to Break a Bad Habit'} />
+    <OrderedList spacing={3} ml="5">
+      <ListItem ml="5">Make it invisible</ListItem>
+      <ListItem ml="5">Make it unattractive</ListItem>
+      <ListItem ml="5">Make it difficult</ListItem>
+      <ListItem ml="5">Make it unsatisfying</ListItem>
+    </OrderedList>
+
+    <TextSubHeader title={'Summary'} />
+    <List spacing={3}>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> Habits are behaviors
+        repeated until they’re automatic, which helps solve life problems with
+        as little energy as possible.
+      </ListItem>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> Every habit consists
+        of a feedback loop of 4 steps: cue, craving, response, reward.
+      </ListItem>
+      <ListItem>
+        <ListIcon as={CheckCircleIcon} color="green.500" /> The Four Laws of
+        Behavior Change are easy rules to build better habits.{' '}
+        <TextTranslate text="Invert" textTranslate={'Đảo Ngược'} /> them to
+        learn how to break habits.
+      </ListItem>
+    </List>
   </Layout>
 )
 
