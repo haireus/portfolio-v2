@@ -35,6 +35,7 @@ const AtomicHabit = () => (
       placeholder="blur"
       loading="lazy"
     />
+    {/* ------------------------------- CHAPTER 1 ------------------------- */}
     <TextHeader title={'Chapter 1: The Surprising Power of Atomic Habits'} />
     <List spacing={3}>
       <ListItem>
@@ -169,7 +170,7 @@ const AtomicHabit = () => (
         .
       </ListItem>
     </List>
-    {/* CHAPTER 2 */}
+    {/* ------------------------------- CHAPTER 2 ------------------------- */}
     <TextHeader
       title={'Chapter 2: How Your Habits Shape Your Identity (And Vice Versa)'}
     />
@@ -353,6 +354,7 @@ const AtomicHabit = () => (
         yourself.
       </ListItem>
     </List>
+    {/* ------------------------------- CHAPTER 3 ------------------------- */}
     <TextHeader
       title={'Chapter 3: How to Build Better Habits in 4 Simple Steps'}
     />
