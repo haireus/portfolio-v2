@@ -154,7 +154,7 @@ const Home = () => (
             >
               CMC global
             </Link>
-            &nbsp; and continue to develope myself!
+            &nbsp; and continue to my journey!
           </BioContent>
         </BioSection>
       </Section>
