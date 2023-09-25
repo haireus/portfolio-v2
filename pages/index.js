@@ -126,13 +126,13 @@ const Home = () => (
           </BioContent>
         </BioSection>
         <BioSection>
-          <BioYear>2020</BioYear>
+          <BioYear>2017</BioYear>
           <BioContent>
             Self-taught programming : HTML, CSS, JS, REACT JS, NODEJS, MYSQL...
           </BioContent>
         </BioSection>
         <BioSection>
-          <BioYear>2020 - 2022</BioYear>
+          <BioYear>2018 - 2021</BioYear>
           <BioContent>
             Joined &nbsp;
             <Link href="https://amela.vn/" target={'_blank'} rel="noreferrer">
@@ -144,7 +144,7 @@ const Home = () => (
         </BioSection>
 
         <BioSection>
-          <BioYear>2022 - now</BioYear>
+          <BioYear>2021 - 2023</BioYear>
           <BioContent>
             Joined &nbsp;
             <Link
@@ -154,7 +154,22 @@ const Home = () => (
             >
               CMC global
             </Link>
-            &nbsp; and continue to my journey!
+            &nbsp; and devoted my time working with Europe coding magician. Such
+            a great time.
+          </BioContent>
+        </BioSection>
+        <BioSection>
+          <BioYear>2023 - now</BioYear>
+          <BioContent>
+            Joined &nbsp;
+            <Link
+              href="https://fptsoftware.com/"
+              target={'_blank'}
+              rel="noreferrer"
+            >
+              FPT
+            </Link>
+            &nbsp; and continue my journey.
           </BioContent>
         </BioSection>
       </Section>
